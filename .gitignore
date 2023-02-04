@@ -70,3 +70,11 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+Assets/Scenes/SampleScene_Terrain.asset
+
+Assets/Scenes/SampleScene_Terrain.asset.meta
+
+Assets/Systems/First Person/Art/Sounds/natureSound.wav
+
+Assets/Systems/First Person/Art/Sounds/natureSound.wav.meta
