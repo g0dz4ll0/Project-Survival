@@ -1,0 +1,210 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6822049512863225888
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6106455174514146834}
+  - component: {fileID: -8658952142612579020}
+  - component: {fileID: 480337876989979165}
+  - component: {fileID: -3800992628162048165}
+  m_Layer: 0
+  m_Name: Detail Painter_GrassyPlains
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6106455174514146834
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6822049512863225888}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-8658952142612579020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6822049512863225888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab60ab2189cfa8e49bdeeb14d3d23fc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Strength: 1
+  TerrainDetail:
+    BillboardTexture: {fileID: 2800000, guid: ae748a31e4f7b0c40aa7e65a57d10678, type: 3}
+    HealthyColour: {r: 0.2627451, g: 0.9764706, b: 0.16470589, a: 1}
+    DryColour: {r: 0.8039216, g: 0.7372549, b: 0.101960786, a: 1}
+    DetailPrefab: {fileID: 0}
+    MinWidth: 1
+    MaxWidth: 2
+    MinHeight: 1
+    MaxHeight: 2
+    NoiseSeed: 1
+    NoiseSpread: 0.1
+    HoleEdgePadding: 0
+  StartHeight: 15
+  EndHeight: 50
+  Intensity:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  SuppressOtherDetails: 0
+  SuppressionIntensity:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &480337876989979165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6822049512863225888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab60ab2189cfa8e49bdeeb14d3d23fc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Strength: 0.112
+  TerrainDetail:
+    BillboardTexture: {fileID: 2800000, guid: f8d9f6800369f3641a8ede20e3ccbf53, type: 3}
+    HealthyColour: {r: 0.034181062, g: 0.2830189, b: 0, a: 1}
+    DryColour: {r: 0.4528302, g: 0.33199668, b: 0.010679956, a: 1}
+    DetailPrefab: {fileID: 0}
+    MinWidth: 1
+    MaxWidth: 2
+    MinHeight: 1
+    MaxHeight: 2
+    NoiseSeed: 2
+    NoiseSpread: 0.1
+    HoleEdgePadding: 0
+  StartHeight: 15
+  EndHeight: 50
+  Intensity:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  SuppressOtherDetails: 0
+  SuppressionIntensity:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &-3800992628162048165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6822049512863225888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab60ab2189cfa8e49bdeeb14d3d23fc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Strength: 0.271
+  TerrainDetail:
+    BillboardTexture: {fileID: 2800000, guid: 4452049791b5a0f4aaf9dc33902adeb3, type: 3}
+    HealthyColour: {r: 0.12077308, g: 1, b: 0, a: 1}
+    DryColour: {r: 0.9716981, g: 0.9164147, b: 0.38959593, a: 1}
+    DetailPrefab: {fileID: 0}
+    MinWidth: 1
+    MaxWidth: 2
+    MinHeight: 1
+    MaxHeight: 2
+    NoiseSeed: 3
+    NoiseSpread: 0.1
+    HoleEdgePadding: 0
+  StartHeight: 15
+  EndHeight: 50
+  Intensity:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  SuppressOtherDetails: 0
+  SuppressionIntensity:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

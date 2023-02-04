@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - LeftHand
+  - RightHand
+  - Slot
+  - Hittable
+  - Enemy
+  - Interactable
+  - Pop-Up
+  - Clock
+  - Pop-Up 2
+  - Lock On
+  - Character
+  - Pop-Up-Message
+  - Message
+  - pickable
+  - QuickSlot
+  - Tree
+  - Iron
+  - FuelSlot
+  - OreSlot
+  - IngotSlot
+  - Trash
+  - Ground
+  - Environment
+  - activeConstructable
+  - ghost
+  - placedFoundation
+  - wallGhost
+  - placedWall
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Terrain
+  - Object
+  - Enemy
+  - Player
+  - Controller
+  - Environment
+  - PostProcessing
+  - Character
+  - Character Collision Blocker
+  - Player
+  - BackStab
+  - Riposte
+  - Block
+  - Projectile
+  - EnemyProjectile
+  - Lava & Water
+  - Interactable
+  - Elevator
+  - Equipable
+  - Buildable
+  - Buildpreview
+  - Player
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

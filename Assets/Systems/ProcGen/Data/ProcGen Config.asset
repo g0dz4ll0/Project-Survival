@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b21352924d9ae4d4dbab3bf57a9637f9, type: 3}
+  m_Name: ProcGen Config
+  m_EditorClassIdentifier: 
+  Biomes:
+  - Biome: {fileID: 11400000, guid: e36172f21c1a19c4389dd00c4923cd7e, type: 2}
+    Weighting: 0.15
+  - Biome: {fileID: 11400000, guid: 3a5f27fa168564942a9d34131863b4ed, type: 2}
+    Weighting: 0.25
+  - Biome: {fileID: 11400000, guid: 05a5269c196a23f43a06e2b311c5daad, type: 2}
+    Weighting: 0.5
+  BiomeSeedPointDensity: 0.1
+  BiomeMapResolution: 64
+  InitialHeightModifier: {fileID: 7046205433011251848, guid: 72c156ae8f6344e47af0ae02cb8310ed, type: 3}
+  HeightPostProcessingModifier: {fileID: 7771129069218973263, guid: 63644b0c23c8a4c4caa7c34db6d5a271, type: 3}
+  PaintingPostProcessingModifier: {fileID: 3291549624608450401, guid: 13a6151346082494daaa528e2f4c8fc8, type: 3}
+  WaterHeight: 14

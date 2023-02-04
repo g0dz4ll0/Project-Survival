@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7771129069218973263
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5174681551253875491}
+  - component: {fileID: -598505207044548649}
+  - component: {fileID: 1759065920982071227}
+  - component: {fileID: 7817735226818768776}
+  - component: {fileID: -7052705412365718444}
+  m_Layer: 0
+  m_Name: HeightModifier_PostProcessing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5174681551253875491
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7771129069218973263}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-598505207044548649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7771129069218973263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6326e3b83412ca147b42e1c837420797, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Strength: 1
+  Features:
+  - HeightMap: {fileID: 2800000, guid: 38c221f4bad2c3f44b7e2a2aac4978ee, type: 3}
+    Height: 900
+    Radius: 60
+    NumToSpawn: 3
+--- !u!114 &1759065920982071227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7771129069218973263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3631d387fb612834885b9f8216cf85e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Strength: 1
+  SmoothingKernelSize: 4
+  UseAdaptiveKernel: 1
+  MaxHeightThreshold: 0.3
+  MinKernelSize: 1
+  MaxKernelSize: 5
+--- !u!114 &7817735226818768776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7771129069218973263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1013ec2854cfc00489628eb81c40beb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Strength: 1
+  HeightDelta: 0
+--- !u!114 &-7052705412365718444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7771129069218973263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa5a9281064263442b4f6353ac5034a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Strength: 1
+  Buildings:
+  - HeightMap: {fileID: 2800000, guid: 01da28379e6cedd4c9997b2c955c9a1b, type: 3}
+    Prefab: {fileID: 2238511949299426653, guid: d5b2c37af57298d4a93b2af3f9e9681b, type: 3}
+    Radius: 5
+    NumToSpawn: 1
+    HasHeightLimits: 1
+    MinHeightToSpawn: 0
+    MaxHeightToSpawn: 30
+    CanGoInWater: 0
+    CanGoAboveWater: 1

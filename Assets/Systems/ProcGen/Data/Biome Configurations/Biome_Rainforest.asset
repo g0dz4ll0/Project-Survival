@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a7b75d820480545b2ae8084a09146a, type: 3}
+  m_Name: Biome_Rainforest
+  m_EditorClassIdentifier: 
+  Name: Rainforest
+  MinIntensity: 0.5
+  MaxIntensity: 1
+  MinDecayRate: 0.1
+  MaxDecayRate: 0.2
+  HeightModifier: {fileID: 5292134848783553836, guid: 405088863442c374c9ba6e8c6307e5b3, type: 3}
+  TerrainPainter: {fileID: 8567465933350615358, guid: c8c928e7425992c4eb04ba8cfbedbf8b, type: 3}
+  ObjectPlacer: {fileID: 7176466217255236742, guid: aaeab57f95aa2224a8483cf688161a55, type: 3}
+  EnemyPlacer: {fileID: 3710809062066510416, guid: ff67f4340d903c44da49d7334d9b2696, type: 3}
+  DetailPainter: {fileID: 6822049512863225888, guid: ebc5ca3f58e1b224cac8d5d4bf7ce59e, type: 3}

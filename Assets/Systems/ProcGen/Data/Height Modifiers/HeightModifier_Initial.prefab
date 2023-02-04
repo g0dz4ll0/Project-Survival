@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7046205433011251848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8261174682326671614}
+  - component: {fileID: 1891311155449373262}
+  - component: {fileID: -6282099727692505516}
+  m_Layer: 0
+  m_Name: HeightModifier_Initial
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8261174682326671614
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7046205433011251848}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1891311155449373262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7046205433011251848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58f3cf8b71765f241831389fd83c1479, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Strength: 1
+  TargetHeight: 20
+--- !u!114 &-6282099727692505516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7046205433011251848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0700892453d17194d8f587987f1dc1f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Strength: 0.25
+  HeightDelta: 20
+  Passes:
+  - HeightDelta: 20
+    NoiseScale: 0.015625
+  - HeightDelta: 10
+    NoiseScale: 0.03125
+  - HeightDelta: 5
+    NoiseScale: 0.0625
+  - HeightDelta: 2.5
+    NoiseScale: 0.125
+  - HeightDelta: 1.25
+    NoiseScale: 0.25
+  XScale: 0.015625
+  YScale: 0.015625
+  NumPasses: 5
+  XScaleVariationPerPass: 1.5
+  YScaleVariationPerPass: 1.5
+  HeightDeltaVariationPerPass: 0.5

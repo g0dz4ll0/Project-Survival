@@ -1,0 +1,419 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7176466217255236742
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1164635408182985062}
+  - component: {fileID: 60311435287715345}
+  - component: {fileID: 7447122202035931831}
+  - component: {fileID: -842063819702790241}
+  - component: {fileID: 4057659103776215423}
+  - component: {fileID: -2936419845720100335}
+  - component: {fileID: -1387950805477689257}
+  - component: {fileID: 4313810779051185641}
+  - component: {fileID: -8983559177715812190}
+  - component: {fileID: -5532157198952537437}
+  - component: {fileID: 2309567562409897030}
+  - component: {fileID: -9000547336971205420}
+  - component: {fileID: -5883465999273383870}
+  - component: {fileID: -606450153373273594}
+  - component: {fileID: 7821744602617871994}
+  m_Layer: 0
+  m_Name: ObjectPlacer_Rainforest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1164635408182985062
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7176466217255236742}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &60311435287715345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7176466217255236742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c2c4f873e385d440b8d2d7f16edc9f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objects:
+  - HasHeightLimits: 1
+    MinHeightToSpawn: 0
+    MaxHeightToSpawn: 30
+    CanGoInWater: 0
+    CanGoAboveWater: 1
+    Weighting: 1
+    Prefabs:
+    - {fileID: 1083397690263268, guid: 4a7479a16600e7547880017cf966eb46, type: 3}
+  TargetDensity: 0.1
+  MaxSpawnCount: 25
+  MaxInvalidLocationSkips: 10000
+  MaxPositionJitter: 0.15
+  NoiseScale: {x: 0.0078125, y: 0.0078125}
+  NoiseThreshold: 0.5
+--- !u!114 &7447122202035931831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7176466217255236742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c2c4f873e385d440b8d2d7f16edc9f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objects:
+  - HasHeightLimits: 1
+    MinHeightToSpawn: 0
+    MaxHeightToSpawn: 30
+    CanGoInWater: 0
+    CanGoAboveWater: 1
+    Weighting: 1
+    Prefabs:
+    - {fileID: 4824397021466181147, guid: 27aedfc6d57635b418c62b2a8982b737, type: 3}
+  TargetDensity: 0.1
+  MaxSpawnCount: 750
+  MaxInvalidLocationSkips: 10000
+  MaxPositionJitter: 0.15
+  NoiseScale: {x: 0.0078125, y: 0.0078125}
+  NoiseThreshold: 0.5
+--- !u!114 &-842063819702790241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7176466217255236742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c2c4f873e385d440b8d2d7f16edc9f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objects:
+  - HasHeightLimits: 1
+    MinHeightToSpawn: 0
+    MaxHeightToSpawn: 30
+    CanGoInWater: 1
+    CanGoAboveWater: 1
+    Weighting: 1
+    Prefabs:
+    - {fileID: 2897701130324229345, guid: d7ba4fe833670a140b9b6085652f0e26, type: 3}
+  TargetDensity: 1
+  MaxSpawnCount: 500
+  MaxInvalidLocationSkips: 10000
+  MaxPositionJitter: 0.15
+  NoiseScale: {x: 0.0078125, y: 0.0078125}
+  NoiseThreshold: 0.5
+--- !u!114 &4057659103776215423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7176466217255236742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c2c4f873e385d440b8d2d7f16edc9f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objects:
+  - HasHeightLimits: 1
+    MinHeightToSpawn: 0
+    MaxHeightToSpawn: 30
+    CanGoInWater: 1
+    CanGoAboveWater: 1
+    Weighting: 1
+    Prefabs:
+    - {fileID: 5982902204796633703, guid: cb4f7b1f7a2a3d941ada1667d0ec5946, type: 3}
+  TargetDensity: 1
+  MaxSpawnCount: 375
+  MaxInvalidLocationSkips: 10000
+  MaxPositionJitter: 0.15
+  NoiseScale: {x: 0.0078125, y: 0.0078125}
+  NoiseThreshold: 0.5
+--- !u!114 &-2936419845720100335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7176466217255236742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c2c4f873e385d440b8d2d7f16edc9f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objects:
+  - HasHeightLimits: 1
+    MinHeightToSpawn: 13
+    MaxHeightToSpawn: 14
+    CanGoInWater: 1
+    CanGoAboveWater: 1
+    Weighting: 1
+    Prefabs:
+    - {fileID: 9051695849136942484, guid: c1a789b5d7960be4ca60bcaa32f3a553, type: 3}
+  TargetDensity: 1
+  MaxSpawnCount: 5000
+  MaxInvalidLocationSkips: 10000
+  MaxPositionJitter: 0.15
+  NoiseScale: {x: 0.0078125, y: 0.0078125}
+  NoiseThreshold: 0.5
+--- !u!114 &-1387950805477689257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7176466217255236742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c2c4f873e385d440b8d2d7f16edc9f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objects:
+  - HasHeightLimits: 1
+    MinHeightToSpawn: 15
+    MaxHeightToSpawn: 30
+    CanGoInWater: 0
+    CanGoAboveWater: 1
+    Weighting: 1
+    Prefabs:
+    - {fileID: 5781250249745494062, guid: d797e5a95d274fe4d9a49837d7d5b66e, type: 3}
+  TargetDensity: 0.1
+  MaxSpawnCount: 185
+  MaxInvalidLocationSkips: 10000
+  MaxPositionJitter: 0.15
+  NoiseScale: {x: 0.0078125, y: 0.0078125}
+  NoiseThreshold: 0.5
+--- !u!114 &4313810779051185641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7176466217255236742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c2c4f873e385d440b8d2d7f16edc9f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objects:
+  - HasHeightLimits: 1
+    MinHeightToSpawn: 15
+    MaxHeightToSpawn: 40
+    CanGoInWater: 0
+    CanGoAboveWater: 1
+    Weighting: 1
+    Prefabs:
+    - {fileID: 3871478160114641497, guid: 0fa46a7df879bb54d9088e9efaa8df1f, type: 3}
+  TargetDensity: 0.1
+  MaxSpawnCount: 1000
+  MaxInvalidLocationSkips: 10000
+  MaxPositionJitter: 0.15
+  NoiseScale: {x: 0.0078125, y: 0.0078125}
+  NoiseThreshold: 0.5
+--- !u!114 &-8983559177715812190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7176466217255236742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c2c4f873e385d440b8d2d7f16edc9f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objects:
+  - HasHeightLimits: 1
+    MinHeightToSpawn: 0
+    MaxHeightToSpawn: 40
+    CanGoInWater: 0
+    CanGoAboveWater: 1
+    Weighting: 1
+    Prefabs:
+    - {fileID: 318764844927503572, guid: 7a6715c6688047d4e8f26ac9a3c70a6c, type: 3}
+  TargetDensity: 0.1
+  MaxSpawnCount: 125
+  MaxInvalidLocationSkips: 10000
+  MaxPositionJitter: 0.15
+  NoiseScale: {x: 0.0078125, y: 0.0078125}
+  NoiseThreshold: 0.5
+--- !u!114 &-5532157198952537437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7176466217255236742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c2c4f873e385d440b8d2d7f16edc9f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objects:
+  - HasHeightLimits: 1
+    MinHeightToSpawn: 0
+    MaxHeightToSpawn: 40
+    CanGoInWater: 0
+    CanGoAboveWater: 1
+    Weighting: 1
+    Prefabs:
+    - {fileID: 156950694633640860, guid: 799481ff405c64042b25d8e716811bd0, type: 3}
+  TargetDensity: 0.1
+  MaxSpawnCount: 1000
+  MaxInvalidLocationSkips: 10000
+  MaxPositionJitter: 0.15
+  NoiseScale: {x: 0.0078125, y: 0.0078125}
+  NoiseThreshold: 0.5
+--- !u!114 &2309567562409897030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7176466217255236742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c2c4f873e385d440b8d2d7f16edc9f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objects:
+  - HasHeightLimits: 1
+    MinHeightToSpawn: 0
+    MaxHeightToSpawn: 30
+    CanGoInWater: 0
+    CanGoAboveWater: 1
+    Weighting: 1
+    Prefabs:
+    - {fileID: 5229151761066731879, guid: 6677ce2ae5368c94aaa1ff3c72d7b9f6, type: 3}
+  TargetDensity: 0.1
+  MaxSpawnCount: 75
+  MaxInvalidLocationSkips: 10000
+  MaxPositionJitter: 0.15
+  NoiseScale: {x: 0.0078125, y: 0.0078125}
+  NoiseThreshold: 0.5
+--- !u!114 &-9000547336971205420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7176466217255236742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c2c4f873e385d440b8d2d7f16edc9f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objects:
+  - HasHeightLimits: 1
+    MinHeightToSpawn: 0
+    MaxHeightToSpawn: 40
+    CanGoInWater: 0
+    CanGoAboveWater: 1
+    Weighting: 1
+    Prefabs:
+    - {fileID: 3742831482457920825, guid: 2a18d847319601148ac8ae26592ac3f9, type: 3}
+  TargetDensity: 0.1
+  MaxSpawnCount: 125
+  MaxInvalidLocationSkips: 10000
+  MaxPositionJitter: 0.15
+  NoiseScale: {x: 0.0078125, y: 0.0078125}
+  NoiseThreshold: 0.5
+--- !u!114 &-5883465999273383870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7176466217255236742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b3a482bfbe8ba9499c03530136a96ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objects:
+  - HasHeightLimits: 1
+    MinHeightToSpawn: 15
+    MaxHeightToSpawn: 60
+    CanGoInWater: 0
+    CanGoAboveWater: 1
+    Weighting: 1
+    Prefabs:
+    - {fileID: 4824397021466181147, guid: 27aedfc6d57635b418c62b2a8982b737, type: 3}
+  TargetDensity: 0.1
+  MaxSpawnCount: 750
+  MaxInvalidLocationSkips: 1000000
+  MaxPositionJitter: 0.15
+--- !u!114 &-606450153373273594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7176466217255236742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b3a482bfbe8ba9499c03530136a96ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objects:
+  - HasHeightLimits: 1
+    MinHeightToSpawn: 15
+    MaxHeightToSpawn: 100
+    CanGoInWater: 0
+    CanGoAboveWater: 1
+    Weighting: 1
+    Prefabs:
+    - {fileID: 2897701130324229345, guid: d7ba4fe833670a140b9b6085652f0e26, type: 3}
+  TargetDensity: 0.1
+  MaxSpawnCount: 1000
+  MaxInvalidLocationSkips: 1000000000
+  MaxPositionJitter: 0.15
+--- !u!114 &7821744602617871994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7176466217255236742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b3a482bfbe8ba9499c03530136a96ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objects:
+  - HasHeightLimits: 1
+    MinHeightToSpawn: 15
+    MaxHeightToSpawn: 200
+    CanGoInWater: 0
+    CanGoAboveWater: 1
+    Weighting: 1
+    Prefabs:
+    - {fileID: 5982902204796633703, guid: cb4f7b1f7a2a3d941ada1667d0ec5946, type: 3}
+  TargetDensity: 0.1
+  MaxSpawnCount: 1000
+  MaxInvalidLocationSkips: 100000000
+  MaxPositionJitter: 0.15
