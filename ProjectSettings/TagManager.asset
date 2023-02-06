@@ -32,6 +32,8 @@ TagManager:
   - placedFoundation
   - wallGhost
   - placedWall
+  - roofGhost
+  - placedRoof
   layers:
   - Default
   - TransparentFX

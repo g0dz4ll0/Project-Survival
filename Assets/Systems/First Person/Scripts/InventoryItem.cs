@@ -170,11 +170,17 @@ public void OnPointerEnter(PointerEventData eventData)
             case "Wall":
                 ConstructionManager.Instance.ActivateConstructionPlacement("WallModel"); //Para testar
                 break;
-            case "DoorFrame(Clone)":
-                ConstructionManager.Instance.ActivateConstructionPlacement("DoorFrameModel");
+            case "Window(Clone)":
+                ConstructionManager.Instance.ActivateConstructionPlacement("WindowModel");
                 break;
-            case "DoorFrame":
-                ConstructionManager.Instance.ActivateConstructionPlacement("DoorFrameModel"); //Para testar
+            case "Window":
+                ConstructionManager.Instance.ActivateConstructionPlacement("WindowModel"); //Para testar
+                break;
+            case "Roof(Clone)":
+                ConstructionManager.Instance.ActivateConstructionPlacement("RoofModel");
+                break;
+            case "Roof":
+                ConstructionManager.Instance.ActivateConstructionPlacement("RoofModel"); //Para testar
                 break;
             default:
                 // não fazer nada

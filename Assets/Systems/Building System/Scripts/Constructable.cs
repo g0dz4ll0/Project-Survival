@@ -19,7 +19,7 @@ public class Constructable : MonoBehaviour
 
     public List<GameObject> ghostList = new List<GameObject>();
 
-    public BoxCollider solidCollider; // Precisamos de arrastar esta referência manualmente no inspetor
+    public MeshCollider solidCollider; // Precisamos de arrastar esta referência manualmente no inspetor
 
     private void Start()
     {

@@ -14,10 +14,10 @@ public class CraftingSystem : MonoBehaviour
     Button toolsBTN, survivalBTN, refineBTN, constructionBTN;
 
     //Butões de Crafting
-    Button craftAxeBTN, craftPickAxeBTN, craftPlankBTN, craftFoundationBTN, craftWallBTN, craftDoorFrameBTN;
+    Button craftAxeBTN, craftPickAxeBTN, craftPlankBTN, craftFoundationBTN, craftWallBTN, craftWindowBTN, craftRoofBTN;
 
     //Texto de Requesitos
-    Text AxeReq1, AxeReq2, PickAxeReq1, PickAxeReq2, PlankReq1, FoundationReq1, WallReq1, DoorFrameReq1;
+    Text AxeReq1, AxeReq2, PickAxeReq1, PickAxeReq2, PlankReq1, FoundationReq1, WallReq1, WindowReq1, RoofReq1;
 
     public bool isOpen;
 
@@ -27,7 +27,8 @@ public class CraftingSystem : MonoBehaviour
     public Blueprint PlankBLP;
     public Blueprint FoundationBLP;
     public Blueprint WallBLP;
-    public Blueprint DoorFrameBLP;
+    public Blueprint WindowBLP;
+    public Blueprint RoofBLP;
 
     public static CraftingSystem Instance { get; set; }
 
@@ -92,11 +93,17 @@ public class CraftingSystem : MonoBehaviour
         craftWallBTN = constructionScreenUI.transform.Find("Wall").transform.Find("Button").GetComponent<Button>();
         craftWallBTN.onClick.AddListener(delegate { CraftAnyItem(WallBLP); });
 
-        //Parede para Porta
-        DoorFrameReq1 = constructionScreenUI.transform.Find("DoorFrame").transform.Find("req1").GetComponent<Text>();
+        //Janela
+        WindowReq1 = constructionScreenUI.transform.Find("Window").transform.Find("req1").GetComponent<Text>();
 
-        craftDoorFrameBTN = constructionScreenUI.transform.Find("DoorFrame").transform.Find("Button").GetComponent<Button>();
-        craftDoorFrameBTN.onClick.AddListener(delegate { CraftAnyItem(DoorFrameBLP); });
+        craftWindowBTN = constructionScreenUI.transform.Find("Window").transform.Find("Button").GetComponent<Button>();
+        craftWindowBTN.onClick.AddListener(delegate { CraftAnyItem(WindowBLP); });
+
+        //Teto
+        RoofReq1 = constructionScreenUI.transform.Find("Roof").transform.Find("req1").GetComponent<Text>();
+
+        craftRoofBTN = constructionScreenUI.transform.Find("Roof").transform.Find("Button").GetComponent<Button>();
+        craftRoofBTN.onClick.AddListener(delegate { CraftAnyItem(RoofBLP); });
     }
 
     void OpenConstructionCategory()
@@ -299,17 +306,30 @@ public class CraftingSystem : MonoBehaviour
             craftWallBTN.gameObject.SetActive(false);
         }
 
-        // ---- Parede para Porta ---- //
+        // ---- Janela ---- //
 
-        DoorFrameReq1.text = "1 Plank [" + plank_count + "]";
+        WindowReq1.text = "1 Plank [" + plank_count + "]";
 
         if (plank_count >= 1 && InventorySystem.Instance.CheckSlotsAvailable(1))
         {
-            craftDoorFrameBTN.gameObject.SetActive(true);
+            craftWindowBTN.gameObject.SetActive(true);
         }
         else
         {
-            craftDoorFrameBTN.gameObject.SetActive(false);
+            craftWindowBTN.gameObject.SetActive(false);
+        }
+
+        // ---- Teto ---- //
+
+        RoofReq1.text = "2 Plank [" + plank_count + "]";
+
+        if (plank_count >= 2 && InventorySystem.Instance.CheckSlotsAvailable(1))
+        {
+            craftRoofBTN.gameObject.SetActive(true);
+        }
+        else
+        {
+            craftRoofBTN.gameObject.SetActive(false);
         }
     }
 }
