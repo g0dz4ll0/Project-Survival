@@ -166,7 +166,13 @@ public class ConstructionManager : MonoBehaviour
                     selectingAGhost = true;
                     selectedGhost = selectionTransform.gameObject;
                 }
-                else if (selectionTransform.gameObject.CompareTag("wallGhost") && (itemToBeConstructed.name == "WallModel" || itemToBeConstructed.name == "DoorFrameModel"))
+                else if (selectionTransform.gameObject.CompareTag("wallGhost") && (itemToBeConstructed.name == "WallModel" || itemToBeConstructed.name == "WindowModel"))
+                {
+                    itemToBeConstructed.SetActive(false);
+                    selectingAGhost = true;
+                    selectedGhost = selectionTransform.gameObject;
+                }
+                else if (selectionTransform.gameObject.CompareTag("roofGhost") && itemToBeConstructed.name == "RoofModel")
                 {
                     itemToBeConstructed.SetActive(false);
                     selectingAGhost = true;
@@ -238,12 +244,38 @@ public class ConstructionManager : MonoBehaviour
             GetAllGhosts(itemToBeConstructed);
             PerformGhostDeletionScan();
         }
-        else if (itemToBeConstructed.name == "WallModel" || itemToBeConstructed.name == "DoorFrameModel")
+        else if (itemToBeConstructed.name == "WallModel")
         {
-            itemToBeConstructed.transform.position = ghostPosition - new Vector3(0, 0.4f, 0);
+            itemToBeConstructed.transform.position = ghostPosition + new Vector3(0, -0.4f, 0);
 
+            // Fazer os filhos do fantasma não serem mais filhos deste item
+            itemToBeConstructed.GetComponent<Constructable>().ExtractGhostMembers();
             itemToBeConstructed.tag = "placedWall";
-            DestroyItem(selectedGhost); //Removemos este fantasma da parede porque o gestor não o fará
+            //Adicionar todos os fantasmas deste item ao banco do gestor
+            GetAllGhosts(itemToBeConstructed);
+            PerformGhostDeletionScan();
+        }
+        else if (itemToBeConstructed.name == "WindowModel")
+        {
+            itemToBeConstructed.transform.position = ghostPosition + new Vector3(0f, 0.59f, 0f);
+
+            // Fazer os filhos do fantasma não serem mais filhos deste item
+            itemToBeConstructed.GetComponent<Constructable>().ExtractGhostMembers();
+            itemToBeConstructed.tag = "placedWall";
+            //Adicionar todos os fantasmas deste item ao banco do gestor
+            GetAllGhosts(itemToBeConstructed);
+            PerformGhostDeletionScan();
+        }
+        else if (itemToBeConstructed.name == "RoofModel")
+        {
+            itemToBeConstructed.transform.position = ghostPosition;
+
+            // Fazer os filhos do fantasma não serem mais filhos deste item
+            itemToBeConstructed.GetComponent<Constructable>().ExtractGhostMembers();
+            itemToBeConstructed.tag = "placedRoof";
+            //Adicionar todos os fantasmas deste item ao banco do gestor
+            GetAllGhosts(itemToBeConstructed);
+            PerformGhostDeletionScan();
         }
 
         itemToBeConstructed = null;

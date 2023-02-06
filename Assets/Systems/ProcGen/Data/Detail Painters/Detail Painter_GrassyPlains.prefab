@@ -54,13 +54,13 @@ MonoBehaviour:
     DetailPrefab: {fileID: 0}
     MinWidth: 1
     MaxWidth: 2
-    MinHeight: 1
-    MaxHeight: 2
+    MinHeight: 0.5
+    MaxHeight: 1
     NoiseSeed: 1
     NoiseSpread: 0.1
     HoleEdgePadding: 0
   StartHeight: 15
-  EndHeight: 50
+  EndHeight: 300
   Intensity:
     serializedVersion: 2
     m_Curve:
@@ -112,13 +112,13 @@ MonoBehaviour:
     DetailPrefab: {fileID: 0}
     MinWidth: 1
     MaxWidth: 2
-    MinHeight: 1
-    MaxHeight: 2
+    MinHeight: 0.5
+    MaxHeight: 1
     NoiseSeed: 2
     NoiseSpread: 0.1
     HoleEdgePadding: 0
   StartHeight: 15
-  EndHeight: 50
+  EndHeight: 300
   Intensity:
     serializedVersion: 2
     m_Curve:
@@ -170,13 +170,13 @@ MonoBehaviour:
     DetailPrefab: {fileID: 0}
     MinWidth: 1
     MaxWidth: 2
-    MinHeight: 1
-    MaxHeight: 2
+    MinHeight: 0.5
+    MaxHeight: 1
     NoiseSeed: 3
     NoiseSpread: 0.1
     HoleEdgePadding: 0
   StartHeight: 15
-  EndHeight: 50
+  EndHeight: 300
   Intensity:
     serializedVersion: 2
     m_Curve:

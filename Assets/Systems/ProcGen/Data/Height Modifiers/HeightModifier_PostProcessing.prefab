@@ -51,8 +51,8 @@ MonoBehaviour:
   Features:
   - HeightMap: {fileID: 2800000, guid: 38c221f4bad2c3f44b7e2a2aac4978ee, type: 3}
     Height: 900
-    Radius: 60
-    NumToSpawn: 3
+    Radius: 150
+    NumToSpawn: 6
 --- !u!114 &1759065920982071227
 MonoBehaviour:
   m_ObjectHideFlags: 0
