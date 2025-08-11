@@ -17,13 +17,14 @@ A personal hobby project that I am developing as a solo dev consisting of a Valh
 
 <img width="1757" height="869" alt="image" src="https://github.com/user-attachments/assets/94111c21-4335-4e68-b676-c30a66137970" />
 <img width="1759" height="867" alt="image" src="https://github.com/user-attachments/assets/30530532-a34d-4679-af2d-a5eb94b836a0" />
-![ezgif com-optimize](https://github.com/user-attachments/assets/ae55311e-cf50-4b1b-9cf3-48aaf12d5a4f)
+[ezgif com-optimize](https://github.com/user-attachments/assets/ae55311e-cf50-4b1b-9cf3-48aaf12d5a4f)
 
 ○ Building System
 
 ![ezgif com-optimize](https://github.com/user-attachments/assets/a3bfdf79-5f9c-4950-8928-6796b8ef95a1)
 
 ○ Day and Night Cycle:
+
 ![ezgif com-optimize](https://github.com/user-attachments/assets/f87c9708-c694-4a4e-9c62-4dd4d2934e82)
 
 # Upcoming Features:
