@@ -7,12 +7,13 @@ A personal hobby project that I am developing as a solo dev consisting of a Valh
 ○ Crafting System:
 
 ![ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/5d1ad8c0-ec3e-48bb-a837-7b7e1899eaae)
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ○ Gathering Resources
 
 ![ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/89230076-cec2-4c6a-ac90-794aae61ae6b)
 ![ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/21b33d8a-e6e6-4995-9b91-ab6723b7eb79)
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ○ Explore Procedural Levels
 
 <img width="1757" height="869" alt="image" src="https://github.com/user-attachments/assets/94111c21-4335-4e68-b676-c30a66137970" />
